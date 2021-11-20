@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <!-- My Color -->
+
+    <color name="light_grey_font">#919191</color>
+    <color name="field_grey_font">#707070</color>
+    <color name="text_box">#E8EBF3</color>
+    <color name="calculator_box">#FCFCFC</color>
+    <color name="other_symbols">#71DFBA</color>
+    <color name="operation_symbols">#E87777</color>
+    <color name="grey_font">#FF5A6265</color>
+    <color name="green">#A0DEA5</color>
+    <color name="transparent">#00000000</color>
+    <color name="border">#707070</color>
+    <color name="button">#F2F2F2</color>
+
+</resources>

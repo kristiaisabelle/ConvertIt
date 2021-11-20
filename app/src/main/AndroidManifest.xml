@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.convertit">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ConverIt.MyConvertIt">
+        <activity
+            android:name="com.example.convertit.Time"
+            android:exported="false" />
+        <activity
+            android:name="com.example.convertit.Area"
+            android:exported="false" />
+        <activity
+            android:name="com.example.convertit.Mass"
+            android:exported="false" />
+        <activity
+            android:name="com.example.convertit.Volume"
+            android:exported="false" />
+        <activity
+            android:name="com.example.convertit.Length"
+            android:exported="false" />
+        <activity
+            android:name="com.example.convertit.Calculator"
+            android:exported="false" />
+        <activity
+            android:name="com.example.convertit.Dashboard"
+            android:exported="false" />
+        <activity
+            android:name="com.example.convertit.OnBoarding"
+            android:exported="false" />
+        <activity
+            android:name="com.example.convertit.SplashScreen"
+            android:exported="true"
+            android:theme="@style/Theme.ConverIt.MyConvertIt">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dashboard_bg"
+    tools:context=".Dashboard"
+    tools:layout_editor_absoluteX="-120dp"
+    tools:layout_editor_absoluteY="-72dp">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="117dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/home"
+        android:textColor="@color/black"
+        android:textSize="33sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.164"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dbCaption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="21dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/home_caption"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome" />
+
+    <ImageButton
+        android:id="@+id/lengthBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/transparent"
+        android:contentDescription="@string/length_box"
+        app:layout_constraintEnd_toEndOf="@+id/dbCaption"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="@+id/dbCaption"
+        app:layout_constraintTop_toBottomOf="@+id/dbCaption"
+        app:srcCompat="@drawable/l_box"
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/lengthBoxCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="142dp"
+        android:layout_marginEnd="241dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/length"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/lengthBtn"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="@+id/lengthBtn"
+        app:layout_constraintTop_toTopOf="@+id/lengthBtn" />
+
+    <ImageButton
+        android:id="@+id/volumeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="6dp"
+        android:background="@color/transparent"
+        android:contentDescription="@string/volume_box"
+        app:layout_constraintEnd_toStartOf="@+id/massBtn"
+        app:layout_constraintStart_toStartOf="@+id/lengthBtn"
+        app:layout_constraintTop_toBottomOf="@+id/lengthBtn"
+        app:srcCompat="@drawable/v_box"
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/volBoxCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="77dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/volume"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/volumeBtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/volumeBtn"
+        app:layout_constraintTop_toTopOf="@+id/volumeBtn" />
+
+    <ImageButton
+        android:id="@+id/massBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/transparent"
+        android:contentDescription="@string/mass_box"
+        app:layout_constraintEnd_toEndOf="@+id/lengthBtn"
+        app:layout_constraintStart_toEndOf="@+id/volumeBtn"
+        app:layout_constraintTop_toBottomOf="@+id/lengthBtn"
+        app:srcCompat="@drawable/m_box"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/massBoxCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="77dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/mass"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/massBtn"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="@+id/massBtn"
+        app:layout_constraintTop_toTopOf="@+id/massBtn" />
+
+    <ImageButton
+        android:id="@+id/areaBtn"
+        android:layout_width="224dp"
+        android:layout_height="177dp"
+        android:background="@color/transparent"
+        android:contentDescription="@string/area_box"
+        app:layout_constraintEnd_toStartOf="@+id/timeBtn"
+        app:layout_constraintStart_toStartOf="@+id/volumeBtn"
+        app:layout_constraintTop_toBottomOf="@+id/volumeBtn"
+        app:srcCompat="@drawable/area_box"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/tempBoxCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="77dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/area"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/areaBtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/areaBtn"
+        app:layout_constraintTop_toTopOf="@+id/areaBtn" />
+
+    <ImageButton
+        android:id="@+id/timeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:contentDescription="@string/time_box"
+        app:layout_constraintEnd_toEndOf="@+id/massBtn"
+        app:layout_constraintTop_toBottomOf="@+id/massBtn"
+        app:srcCompat="@drawable/time_box"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/timeBoxCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="77dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/time"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/timeBtn"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toEndOf="@+id/areaBtn"
+        app:layout_constraintTop_toTopOf="@+id/timeBtn" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="397dp"
+        android:layout_height="90dp"
+        android:background="@color/white"
+        android:paddingTop="10dp"
+        app:itemIconSize="30sp"
+        android:layout_gravity="start"
+        android:layout_alignParentBottom="true"
+        app:elevation="8dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
